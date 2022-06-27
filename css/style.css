@@ -1,0 +1,196 @@
+/* scrolldown styles */
+.scrolldown {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  height: 50px;
+}
+.scrollnav {
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  color: #333;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+.scrolldown::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 30px;
+  background: #333;
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity: 0;
+}
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+/* header styles */
+.top-header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  z-index: -3;
+}
+.top-header:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100%;
+  height: 90vh;
+  background: #333;
+}
+.top-catcher {
+  position: fixed;
+  color: #fff;
+  font: 24px normal;
+  text-align: center;
+  vertical-align: center;
+  z-index: -2;
+  border: 5px solid #fff;
+  padding: 24px;
+}
+main {
+  padding: 80px 0;
+  background: #eee;
+  width: 100%;
+}
+body {
+  background: #333;
+}
+#slider {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -2;
+}
+
+/* fadeUp styles */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeUpTrigger {
+  opacity: 0;
+}
+.animation1 {
+  animation-delay: 0.5s;
+}
+.animation2 {
+  animation-delay: 1s;
+}
+.animation3 {
+  animation-delay: 1.5s;
+}
+.animation4 {
+  animation-delay: 2s;
+}
+
+/* PageTopLink styles */
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(150px);
+}
+#page-top.UpMove{
+  animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#page-top.DownMove{
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(150px);
+  }
+}
+#page-top a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  background: url(../img/cute-cat.png) no-repeat center;
+  background-size: contain;
+}
+#page-top.floatAnime a {
+  width: 100px;
+  height: 130px;
+  background: url(../img/cute-cat__balloon.png) no-repeat center;
+  background-size: contain;
+  animation: floatAnime 2s linear infinite;
+  opacity: 0;
+}
+@keyframes floatAnime {
+  0% { transform: translateX(0); opacity: 0; }
+  25% { transform: translateX(-6px);opacity: 1; }
+  50% { transform: translateX(0) }
+  100% { transform: translateX(6px);opacity: 1; }
+}
+#page-top span {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  color: #666;
+}
+
+/* footer style */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 24px;
+  text-align: center;
+}

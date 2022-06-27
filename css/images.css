@@ -1,0 +1,86 @@
+/* models styles */
+.modelbox-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.modelbox-list li {
+  flex: 0 0 20%;
+  margin: 10px;
+  background: #fff;
+}
+.smallimage {
+  margin-top: 20%;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  
+}
+.bigimage {
+  height: 70%;
+  width: 70%;
+}
+
+/* automatic animation styles */
+/* .image-link {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 20px 10px;
+  text-decoration: none;
+  outline: none;
+  clip-path: circle(10%);
+  animation: clipPathAnimation 7s ease-in-out infinite alternate;
+}
+@keyframes clipPathAnimation {
+  0% {
+    clip-path: circle(20%);
+  }
+  50% {
+    clip-path: circle(50%);
+  }
+  75% {
+    clip-path: circle(60%);
+  }
+  100% {
+    clip-path: circle(100%);
+  }
+} */
+
+/* hover image circleanimation styles */
+.image-link:hover::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  border: 1px solid #333;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 1;
+  animation: 1s circleanime forwards;
+}
+@keyframes circleanime {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* responsive design styles */
+@media screen and (max-width: 600px) {
+  .modelbox-list li {
+    flex: 0 0 40%;
+  }
+  .image-link:hover::before {
+    left: 30%;
+    width: 60px;
+    height: 60px;
+  }
+}
