@@ -85,6 +85,21 @@ body {
   height: 100vh;
   z-index: -2;
 }
+.TextTyping span {
+  display: none;
+}
+.TextTyping::after {
+  content: "|";
+  animation: typinganime .8s ease infinite;
+}
+@keyframes typinganime {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* fadeUp styles */
 .fadeUp {
