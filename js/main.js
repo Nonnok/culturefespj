@@ -52,6 +52,7 @@ $('#slider').vegas({
   slides: [
     { src: 'img/artiodactyls-heel-after.png' },
     { src: 'img/jump-after.png' },
+    { src: 'img/oneroom.png' },
     { src: 'img/posing-after.png' },
     { src: 'img/artiodactyls1-after.png'},
     { src: 'img/artiodactyls5-after.png' },

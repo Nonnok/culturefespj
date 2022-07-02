@@ -23,31 +23,15 @@ img {
   height: 70%;
   width: 70%;
 }
-
-/* automatic animation styles */
-/* .image-link {
-  position: relative;
-  display: inline-block;
-  margin: 0 10px 20px 10px;
-  text-decoration: none;
-  outline: none;
-  clip-path: circle(10%);
-  animation: clipPathAnimation 7s ease-in-out infinite alternate;
+.frontispiece {
+  width: 100%;
+  max-width: 680px;
+  margin: 10px auto;
 }
-@keyframes clipPathAnimation {
-  0% {
-    clip-path: circle(20%);
-  }
-  50% {
-    clip-path: circle(50%);
-  }
-  75% {
-    clip-path: circle(60%);
-  }
-  100% {
-    clip-path: circle(100%);
-  }
-} */
+.frontispiece-background {
+  padding: 24px;
+  background: black;
+}
 
 /* hover image circleanimation styles */
 .image-link:hover::before {
