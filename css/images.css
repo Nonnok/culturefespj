@@ -67,4 +67,10 @@ img {
     width: 60px;
     height: 60px;
   }
+  .animation1, .animation4 {
+    animation-delay:0.5s;
+  }
+  .animation2, .animation3 {
+    animation-delay: 1s;
+  }
 }
