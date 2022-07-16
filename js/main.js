@@ -51,6 +51,8 @@ $('#page-top').click(function () {
 $('#slider').vegas({
   slides: [
     { src: 'img/artiodactyls-heel-after.png' },
+    { src: 'img/rabbit2.png' },
+    { src: 'img/mimic.png' },
     { src: 'img/jump-after.png' },
     { src: 'img/oneroom.png' },
     { src: 'img/posing-after.png' },
@@ -62,6 +64,7 @@ $('#slider').vegas({
     { src: 'img/artiodactyls3-after.png' },
     { src: 'img/sit-down-after.png' },
     { src: 'img/fullface-after.png' },
+    { src: 'img/rabbit.png'},
     { src: 'img/artiodactyls6-after.png' },
     { src: 'img/artiodactyls4-after.png' },
   ],
