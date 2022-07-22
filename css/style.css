@@ -159,16 +159,16 @@ body {
   opacity: 0;
 }
 .animation1 {
-  animation-delay: 0.5s;
+  animation-delay: 0.25s;
 }
 .animation2 {
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 .animation3 {
-  animation-delay: 1.5s;
+  animation-delay: 0.75s;
 }
 .animation4 {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 /* PageTopLink styles */

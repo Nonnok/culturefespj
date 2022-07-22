@@ -51,6 +51,7 @@ $('#page-top').click(function () {
 $('#slider').vegas({
   slides: [
     { src: 'img/artiodactyls-heel-after.png' },
+    { src: 'img/human3.png' },
     { src: 'img/rabbit2.png' },
     { src: 'img/mimic.png' },
     { src: 'img/jump-after.png' },
